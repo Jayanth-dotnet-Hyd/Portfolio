@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bandi Jayanth — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- THREE.JS CANVAS -->
+<canvas id="three-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">BJ<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-lines"></div>
+
+  <div class="hero-layout">
+    <!-- Left: Text -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span></span> Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        Bandi<br>
+        <span class="line-2">Jayanth</span>
+      </h1>
+      <p class="hero-subtitle">
+        Software Consultant @ Encora · Full-Stack Engineer · AI/ML Researcher
+        building enterprise systems and intelligent applications.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">40%</div><div class="stat-label">Scalability Boost</div></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><div class="stat-num">500K+</div><div class="stat-label">Records / Day</div></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><div class="stat-num">10K+</div><div class="stat-label">Active Users</div></div>
+      </div>
+    </div>
+
+    <!-- Right: Profile Photo -->
+    <div class="hero-photo-wrap">
+      <div class="photo-ring"></div>
+      <div class="photo-ring photo-ring-2"></div>
+      <div class="photo-container">
+        <img src="assets/profile.jpeg" alt="Bandi Jayanth" class="profile-photo" />
+      </div>
+      <div class="photo-badge photo-badge-1">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        .NET · React
+      </div>
+      <div class="photo-badge photo-badge-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        8.54 CGPA
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm a <strong>Software Consultant at Encora Innovation Labs</strong>, Hyderabad, building enterprise microservices and full-stack applications using <strong>ASP.NET Core, React, and Azure</strong>.</p>
+        <p>My academic background in Electronics & Communication Engineering from CBIT gave me a strong foundation in both hardware systems and software, which I now apply to build robust, scalable platforms.</p>
+        <p>I've published research in a <strong>Scopus-indexed journal</strong> on ML-based traffic enforcement systems — bridging computer vision, real-time processing, and civic tech.</p>
+      </div>
+      <div class="skills-cloud">
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-tags">
+            <span class="stag stag-a">C#</span>
+            <span class="stag stag-a">TypeScript</span>
+            <span class="stag stag-a">JavaScript</span>
+            <span class="stag stag-a">Python</span>
+            <span class="stag stag-a">Java</span>
+            <span class="stag stag-a">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Frameworks</div>
+          <div class="skill-tags">
+            <span class="stag stag-b">ASP.NET Core</span>
+            <span class="stag stag-b">React.js</span>
+            <span class="stag stag-b">.NET 6/7/8</span>
+            <span class="stag stag-b">Entity Framework</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Cloud & DevOps</div>
+          <div class="skill-tags">
+            <span class="stag stag-c">Azure</span>
+            <span class="stag stag-c">Docker</span>
+            <span class="stag stag-c">GitLab CI/CD</span>
+            <span class="stag stag-c">Azure DevOps</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">AI / ML</div>
+          <div class="skill-tags">
+            <span class="stag stag-d">YOLOv8</span>
+            <span class="stag stag-d">OpenCV</span>
+            <span class="stag stag-d">Tesseract OCR</span>
+            <span class="stag stag-d">Computer Vision</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">My Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-desc">Real-world systems spanning computer vision, enterprise software, and data engineering.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Traffic AI -->
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image-wrap">
+          <img src="assets/project2.jpeg" alt="Traffic Detection System" class="project-image" />
+          <div class="project-image-overlay">
+            <span class="project-live-badge">
+              <span class="live-dot"></span> AI Vision System
+            </span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">AI/ML · Computer Vision · Research</div>
+          <div class="project-title">Smart Traffic Enforcement — ANPR + Helmet Detection</div>
+          <p class="project-desc">Published in a Scopus-indexed journal. Real-time YOLOv8 system detecting helmet violations and extracting license plates from live CCTV feeds with 99.4% rider detection confidence.</p>
+          <div class="project-stack">
+            <span class="stack-tag">YOLOv8</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">OpenCV</span>
+            <span class="stack-tag">Tesseract OCR</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-num">99.4%</div><div class="metric-label">Confidence</div></div>
+            <div class="metric"><div class="metric-num">30 FPS</div><div class="metric-label">Real-time</div></div>
+            <div class="metric"><div class="metric-num">Scopus</div><div class="metric-label">Published</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: License Dashboard -->
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image-wrap">
+          <img src="assets/project1.jpeg" alt="License Management Dashboard" class="project-image" />
+          <div class="project-image-overlay">
+            <span class="project-live-badge">
+              <span class="live-dot"></span> Enterprise SaaS
+            </span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Enterprise · Full-Stack · Dashboard</div>
+          <div class="project-title">Nexus LIS — Global License Management System</div>
+          <p class="project-desc">Enterprise-grade software license management platform with real-time utilization tracking, compliance risk scoring, renewal pipelines, and spend forecasting for 14,350+ active licenses.</p>
+          <div class="project-stack">
+            <span class="stack-tag">ASP.NET Core</span>
+            <span class="stack-tag">React.js</span>
+            <span class="stack-tag">Azure SQL</span>
+            <span class="stack-tag">TypeScript</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-num">14.3K</div><div class="metric-label">Licenses</div></div>
+            <div class="metric"><div class="metric-num">$4.8M</div><div class="metric-label">Pipeline</div></div>
+            <div class="metric"><div class="metric-num">22.7K</div><div class="metric-label">Users</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Grocery Comparison -->
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image-wrap">
+          <img src="assets/project3.jpeg" alt="Grocery Price Comparison" class="project-image" />
+          <div class="project-image-overlay">
+            <span class="project-live-badge">
+              <span class="live-dot"></span> Web App
+            </span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Web · Data Aggregation · Consumer Tech</div>
+          <div class="project-title">GroceCompare — Smart Grocery Price Comparison</div>
+          <p class="project-desc">Real-time grocery price aggregator comparing Zepto, Blinkit, BigBasket and Instamart with smart caching, category filtering, and platform availability tracking for Hyderabad users.</p>
+          <div class="project-stack">
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">REST APIs</span>
+            <span class="stack-tag">Web Scraping</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><div class="metric-num">70%</div><div class="metric-label">Faster</div></div>
+            <div class="metric"><div class="metric-num">15%</div><div class="metric-label">Avg Savings</div></div>
+            <div class="metric"><div class="metric-num">4+</div><div class="metric-label">Platforms</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Experience</h2>
+      <p class="section-desc">Building production systems since university, now consulting at enterprise level.</p>
+    </div>
+
+    <div class="exp-grid reveal">
+      <div class="exp-line"></div>
+
+      <div class="exp-item">
+        <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
+        <div class="exp-card">
+          <div class="exp-meta">
+            <div>
+              <div class="exp-role">Software Consultant</div>
+              <div class="exp-company">Encora Innovation Labs</div>
+              <div class="exp-location">Hyderabad, India</div>
+            </div>
+            <div class="exp-period">Aug 2024 — Present</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed enterprise microservices using <strong>ASP.NET Core, .NET 6/7/8</strong> with Clean Architecture and SOLID principles, improving scalability <strong>40%</strong> and reducing deployment time <strong>35%</strong></li>
+            <li>Built responsive <strong>React.js / TypeScript</strong> apps with RESTful APIs and JWT authentication serving <strong>10,000+ users</strong></li>
+            <li>Engineered <strong>ETL data pipelines</strong> processing <strong>500K+ daily records</strong> with optimized SQL queries for analytics dashboards</li>
+            <li>Conducted code reviews and mentored developers in Agile sprints maintaining <strong>95%+ test coverage</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot-wrap"><div class="exp-dot exp-dot-edu"></div></div>
+        <div class="exp-card">
+          <div class="exp-meta">
+            <div>
+              <div class="exp-role">B.E. Electronics & Communication Engineering</div>
+              <div class="exp-company">Chaitanya Bharathi Institute of Technology</div>
+              <div class="exp-location">Hyderabad, India</div>
+            </div>
+            <div class="exp-period">Nov 2021 — May 2025</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Graduated with <strong>8.54/10.0 CGPA</strong> from a premier engineering institution</li>
+            <li>Published research paper on <strong>ML-based Helmet Detection & ANPR</strong> in a Scopus-indexed journal</li>
+            <li>Built multiple full-stack and AI/ML projects spanning computer vision, microservices, and data engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title">Achievements & Certs</h2>
+    </div>
+
+    <div class="achievements-grid reveal">
+      <div class="ach-card">
+        <div class="ach-icon">📄</div>
+        <div class="ach-title">Scopus-Indexed Research Publication</div>
+        <p class="ach-desc">Published "Machine Learning Technique for Helmet Detection and Vehicle Number Plate Extraction" — real-time ML + OCR system for road safety enforcement from CCTV footage.</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon">⚡</div>
+        <div class="ach-title">35% Faster Deployment Cycles</div>
+        <p class="ach-desc">Reduced release cycles from weeks to days at Encora by implementing streamlined CI/CD pipelines using GitLab, Docker, and Azure DevOps across enterprise microservices.</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-title">500K+ Records Processed Daily</div>
+        <p class="ach-desc">Engineered high-throughput ETL data pipelines with optimized SQL and analytics dashboards powering data-driven decision making at scale.</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:3rem;">
+      <div class="section-label" style="margin-bottom:1.25rem;">Certifications</div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon cert-icon-azure">🔷</div>
+          <div class="cert-info">
+            <div class="cert-name">Azure Developer Associate</div>
+            <div class="cert-issuer">Microsoft</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon cert-icon-nptel">🎓</div>
+          <div class="cert-info">
+            <div class="cert-name">Joy of Computing using Python</div>
+            <div class="cert-issuer">NPTEL · IIT Madras</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon cert-icon-infosys">💼</div>
+          <div class="cert-info">
+            <div class="cert-name">Programming using Java</div>
+            <div class="cert-issuer">Infosys SpringBoard</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="section-inner contact-inner reveal">
+    <div class="section-label">Let's Talk</div>
+    <h2 class="section-title">Open to<br>Great Work</h2>
+    <p class="contact-desc">Whether it's a full-time role, consulting project, or just a conversation about building things — I'd love to connect.</p>
+    <div class="contact-links">
+      <a href="tel:+918978499589" class="contact-link">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +91 89784 99589
+      </a>
+      <a href="https://linkedin.com/in/bandi-jayanth" target="_blank" class="contact-link">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/bandi-jayanth" target="_blank" class="contact-link">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="mailto:bandijayanthh@gmail.com" class="contact-link">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Me
+      </a>
+    </div>
+    <a href="mailto:bandijayanthh@gmail.com" class="contact-email">bandijayanthh@gmail.com</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 Bandi Jayanth. Built with intent.</span>
+  <span>Hyderabad, India 🇮🇳</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
